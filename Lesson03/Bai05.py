@@ -1,10 +1,13 @@
 from math import factorial
 epsilon = float(input("Nhập số nhỏ hơn 1: "))
-n = 0
-tong = 1
-i_gt = 1
+
+i = 0
+tong = 0
+i_gt = factorial(i)
+
 while (1 / i_gt) >= epsilon:
-    n = n + 1
-    i_gt = factorial(n)
     tong = tong + (1 / i_gt)
+    i = i + 1
+    i_gt = factorial(i)
+
 print(f"e = {tong}")
