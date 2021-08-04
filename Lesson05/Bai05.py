@@ -1,4 +1,4 @@
-s = str(input("Nhập chuỗi bất kỳ: "))
+s = input("Nhập chuỗi bất kỳ: ")
 
 for so in s:
     if "0" <= so <= "9":
